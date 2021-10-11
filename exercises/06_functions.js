@@ -13,14 +13,14 @@ b- A la función suma anterior, agregarle una validación para controlar si algu
 no es un número, mostrar una alerta aclarando que uno de los parámetros tiene error y retornar el
 valor NaN como resultado.************************************************************************/
 function sumFunction(num1, num2) {
-    if (isNaN(num1) || isNaN(num2)) {
+    if (typeof num1 !== 'number' || typeof num2 !== 'number') {
         alert('Exercise 6.b: At least one of the parameters is not a number');
         return NaN;
     } else {
         return num1 + num2; 
     } 
 }
-var validateNumbers = sumFunction(10, 'word');
+var validateNumbers = sumFunction(10, '40');
 console.log('Exercise 6.b:', validateNumbers);
 
 /***********************************************************************************************
