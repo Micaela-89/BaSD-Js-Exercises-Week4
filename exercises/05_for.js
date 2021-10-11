@@ -3,14 +3,14 @@ a- Crear un array que contenga 5 palabras y recorrer dicho array utilizando un b
 JavaScript para mostrar una alerta utilizando cada una de las palabras.********************/
 var fruits= ['apple','banana', 'grapes', 'lemon', 'orange'];
 
-for(var i=0; i < 5; i++){
+for(var i=0; i < fruits.length; i++){
     alert('Exercise 5.a: ' + fruits[i])
 }
 /******************************************************************************************
 b- Al array anterior convertir la primera letra de cada palabra en mayúscula y mostrar una
 alerta por cada palabra modificada.*******************************************************/
 
-for(var i=0; i < 5; i++){
+for(var i=0; i < fruits.length; i++){
     alert('Exercise 5.b: ' + fruits[i].charAt().toUpperCase() + fruits[i].substring(1));
 }
 
@@ -21,7 +21,7 @@ final mostrar una única alerta con la cadena completa.*************************
 
 var sentence= ' ';
 
-for(var i=0; i < 5; i++){
+for(var i=0; i < fruits.length; i++){
     sentence = sentence +  fruits[i] + ' ';
 }
 alert('Exercise 5.c: ' + sentence);
